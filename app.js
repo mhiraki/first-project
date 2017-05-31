@@ -13,8 +13,6 @@
 
 //The Fortune Teller function
 
-window.onload = function() {
-
 function fortuneTeller() {
 	var numChildren = Math.floor(Math.random()*10);
 	var partnerName = ["Tyler", "Steve", "Josh", "James", "Nick"];
@@ -25,10 +23,10 @@ function fortuneTeller() {
 	var randoJob = jobTitle[Math.floor(Math.random()*jobTitle.length)];
 	var fortune = "You will be a " + randoJob +  " in " + randoGeographic + " and married to " + randoName + " with " + numChildren + " kids."
 	
-	return fortune;
+	document.getElementById('test').innerHTML = fortune;
+	
 }
-	document.getElementById('test').innerHTML = fortuneTeller();
-}
+
 
 
 
